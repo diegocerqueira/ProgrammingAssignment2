@@ -47,7 +47,7 @@ cacheSolve <- function(x, ...) {
     return(solved.matrix)
   }
   matrixData <- x$getMatrix()
-  solved.matrix <- solve(matrixData)
+  solved.matrix <- solve(matrixData, ...)
   x$setInvertedMatrix(solved.matrix)
   solved.matrix
 }
